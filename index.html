@@ -1,1 +1,446 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Oxygen Aatma</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    </head>
+        
+   <style>
+        .masthead {
+            background-color: #f8f9fa;
+            padding-top: 9.5rem;
+            padding-bottom: 5rem;
+        }
+#mainNav {
+  background-color: #fff;
+}
+#mainNav .navbar-brand {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
+  color: #2937f0;
+}
+#mainNav .navbar-toggler {
+  padding: 0.5rem;
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #6c757d;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #2937f0;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.bg-img-fluid {
+    background-image: url('header-bg.jpeg');
+}
+.bg-img-fluid, .bg-img-fluid-ind {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#logo-img {
+    height: 50px;
+}
+.bg-img-fluid, .bg-img-fluid-ind {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 20em;
+}
+main {
+    padding-top: 4.5rem;
+}
+.service-heading {
+    font-weight: 400;
+}
+section {
+    padding-top: 5rem;
+}
+.contact-wrap {
+  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  }
+  .contact-wrap .col-form-label {
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0; 
+}
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px; }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5); }
+    .contact-wrap .contact-info ul li {
+      margin-bottom: 15px;
+      color: rgba(255, 255, 255, 0.5); }
+      .contact-wrap .contact-info ul li .wrap-icon {
+        font-size: 20px;
+        color: #fff;
+    }
+  .contact-wrap .form {
+    background: #fff; }
+    .contact-wrap .form h3 {
+      color: #35477d;
+      font-size: 20px;
+      margin-bottom: 30px; }
+  .contact-wrap .contact-info {
+    background: #35477d; }
+    .contact-wrap .contact-info h3 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 30px; }
+
+label.error {
+  font-size: 12px;
+  color: red; }
+
+#message {
+  resize: vertical; }
+
+#form-message-warning, #form-message-success {
+  display: none; }
+
+#form-message-warning {
+  color: #B90B0B; }
+
+#form-message-success {
+  color: #55A44E;
+  font-size: 18px;
+  font-weight: bold; }
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000; }
+
+  .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  background: none; }
+  .form-control:active, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #000; }
+
+.btn, .form-control, .custom-select {
+  height: 45px; }
+
+.custom-select:active, .custom-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000; }
+
+.btn {
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: .2rem;
+  text-transform: uppercase; }
+  .btn.btn-primary {
+    background: #35477d;
+    color: #fff;
+    padding: 15px 20px; }
+  .btn:hover {
+    color: #fff; }
+  .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    textarea.form-control {
+  height: auto;
+}
+
+.social-icon {
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder { color:#bbbbbb !important; }
+::-moz-placeholder { color:#bbbbbb !important; } /* firefox 19+ */
+:-ms-input-placeholder { color:#bbbbbb !important; } /* ie */
+input:-moz-placeholder { color:#bbbbbb !important; }
+
+/* #contact {
+    background-color: aliceblue;
+} */
+    </style>
+    <body id="page-top">
+            <div class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+                <div class="container px-5">
+                    <a class="navbar-brand fw-bold" href="#page-top"><img id="logo-img" src="logo4.png"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                            <li class="nav-item"><a class="nav-link me-lg-3" href="#page-top">Home</a></li>
+                            <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Services</a></li>
+                            <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <!-- Navigation-->
+        
+        <main>
+            <div class="container-fluid" id="">
+                <div class="row bg-img-fluid">
+                    <div class="col-lg-12 align-items-center d-flex justify-content-center">
+                        <!-- <div class="text-white display-6 ">Catchy words about what we do.</div> -->
+                    </div>
+                </div>
+            </div>
+            <section class="container " id="about">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12 text-center">
+                        <!-- Mashead text and app badges-->
+                            <h2 class="display-6 lh-1 mb-4">Our company.</h1>
+                            <p class=" fw-normal text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac efficitur quam. Vestibulum consectetur eros malesuada leo rutrum, eget consequat odio hendrerit. Etiam vehicula erat at orci condimentum porttitor. Sed suscipit erat congue nunc scelerisque cursus. Curabitur vulputate tincidunt quam, sit amet sodales ex tempor auctor. Cras eget diam lorem. Fusce dolor nisl, tristique sed nibh id, consequat pretium erat. Pellentesque vel dui nunc. Aenean at sem sollicitudin ligula iaculis ornare at ac nisl.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        <!-- Quote/testimonial aside-->
+        <!-- <aside class="text-center bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
+                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                    </div>
+                </div>
+            </div>
+        </aside> -->
+        <!-- App features section-->
+        <section id="features" class="">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <h2 class="display-6 lh-1 mb-4">Our Expertise</h2>
+                                </div>
+                            </div>
+                            <div class="row gx-4">
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 1</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 2</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 3</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 4</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 5</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="border border-1 rounded-1 p-3 text-center">
+                                        <h4 class="service-heading">Service 6</h4>
+                                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid bg-light pb-5" id="contact">
+            <div class="container py-5">
+                <div class="row align-items-stretch no-gutters contact-wrap">
+                    <div class="col-md-8">
+                        <div class="form h-100">
+                            <h3>Get In Touch</h3>
+                            <form class="mb-5" method="post" id="contactForm" name="contactForm" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-5">
+                                        <label for="" class="col-form-label text-secondary">Name *</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-5">
+                                        <label for="" class="col-form-label text-secondary">Email *</label>
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-5">
+                                        <label for="" class="col-form-label text-secondary">Phone</label>
+                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone #">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-5">
+                                        <label for="" class="col-form-label text-secondary">Company</label>
+                                        <input type="text" class="form-control" name="company" id="company" placeholder="Company  name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-5">
+                                        <label for="message" class="col-form-label text-secondary">Message *</label>
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                                            placeholder="Write your message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                                        <span class="submitting"></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="form-message-warning mt-4"></div>
+                            <div id="form-message-success">
+                                Your message was sent, thank you!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="contact-info h-100">
+                            <h3>Contact Information</h3>
+                            <ul class="list-unstyled">
+                                <li class="d-flex">
+                                    <span class="wrap-icon me-3"><i class="bi bi-geo-alt"></i></span>
+                                    <span class=" text">Hafeezpet, Hyderabad, Telangana, India</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="wrap-icon me-3"><i class="bi bi-telephone"></i></span>
+                                    <span class="text">+91 9717505554</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="wrap-icon me-3"><i class="bi bi-envelope-at"></i></span>
+                                    <span class="text">oxygenaatma@gmail.com</span>
+                                </li>
+                            </ul>
+                            <div class="contact-social">
+                                <h3 class="mb-2 pt-5">Follow Me</h3>
+                                <div class="social-icons-wrap d-flex align-items-center">
+                                    <a class="social-icon pe-3" href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a class="social-icon pe-3" href="#"><i class="bi bi-facebook"></i></a>
+                                    <a class="social-icon pe-3" href="#"><i class="bi bi-twitter"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-black text-center py-3">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Oxygen Aatma 2023. All Rights Reserved.</div>
+                </div>
+            </div>
+
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form> -->
+        </main>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
