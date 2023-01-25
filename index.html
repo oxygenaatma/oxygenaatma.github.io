@@ -224,6 +224,46 @@ input:-moz-placeholder { color:#bbbbbb !important; }
     }
 }
 
+.service-box {
+    position: relative;
+    padding-left: 83px!important;
+    margin: 0 0 43px!important;
+    height: 70px;
+}
+
+.service-box .icon-wrap {
+    /* border-color: #66bb6a; */
+    border-color: #f18b32;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 68px;
+    border: 2px solid #f18b32;
+    color: #f18b32;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 64px;
+    font-size: 28px;
+}
+
+.service-box:hover .icon-wrap {
+    background-color: #f18b32;
+    color: #ffffff;
+}
+
+.service-text {
+    font-size: 1.15rem;
+}
+
+.service-box:hover .service-text {
+    color: #f18b32 !important;
+}
+
+.service-box:hover {
+    cursor: pointer;
+}
+
 /* #contact {
     background-color: aliceblue;
 } */
@@ -238,8 +278,8 @@ input:-moz-placeholder { color:#bbbbbb !important; }
                     <div class="collapse show navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                             <li class="nav-item"><a class="nav-link me-lg-3" href="#page-top">Home</a></li>
-                            <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Services</a></li>
+                            <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -255,46 +295,63 @@ input:-moz-placeholder { color:#bbbbbb !important; }
                     </div>
                 </div>
             </div>
-            <section class="container " id="about">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-12">
-                        <!-- Mashead text and app badges-->
-                            <h2 class="display-6 lh-1 mb-4 text-center">KEY EXPERIENCE and STRENGTHS</h1>
-                            <p class="fw-normal text-muted">
-                                Strong Exposure and working experience in Indian Air Separation industry, for over 36 years. I played a leading role during this tenure with my respective organizations and consequently, contributed immensely to the development of this industry in India. 
 
-<br>In the initial stages of learning  developed programs in Fortran language for Distillation column design and pressure drop calculations for air separation units. This was given a tremendous incites and helped to excel in  process calculations         
-
-<br>Conversant with the various software’s utilized in Chemical and Process design such as  process simulators HYSYS, Aspen, HTRI etc. I used them extensively and did several optimization studies thus saved a lot during project execution .
-
-<br><br>A Chemical (Process & Safety) Engineer with more than forty one  years of experience in the field of projects, process and safety engineering. I worked on diverse projects in the chemical industries, petrochemical industries, off-shore units and refineries. Is involved in the conceptualization of the project, client interface for proper communication, generate information for detail design of systems, equipment, piping, layout, instrumentation, electrical, procurement, inspection, etc., interaction with technology suppliers and undertaking the basic engineering , detail Engineering.  I also focused on Process safety aspects of chemical and Hydrocarbon plants.  
-
-<br>I worked in process design in various companies and participated in commissioning, site work and trouble shooting.
-
-
-
-<br>Exposure to International travel and participated in various meetings and internal seminars. Visited Paris, Germany, China, UK, JAPAN, Poland ,US , UAE etc on business travel.  Participated in process and environmental safety seminars.
-
-
-<br>Strong fundamentals in Chemical Engineering with extensive industry experience in varied roles. Good Engineering skills in fluid mechanics, process control, process design, Heat & mass transfer. 
-
-<br>I am a successful team member , team leader, listener, problem solver and mentor. 
-Pro-active attitude, Interested in constant learning  with Good Communication Skills.
-
-                            </p>
-                    </div>
-                    
-                </div>
-            </section>
         
         <section id="features" class="">
-            <div class="container px-5 pb-3">
+            <div class="container px-3 pb-3">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
+                    <div class="col-lg-12 order-lg-1 mb-3 mb-lg-0">
                         <div class="text-center">
-                            <h2 class="display-6 lh-1 mb-4">Expertise</h2>
+                            <h2 class="display-6 lh-1 mb-5">Services Offered</h2>
                         </div>
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="fw-row">
+                            <div class="fw-col-xs-12 fw-col-sm-12 fw-col-md-12 fw-col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="service-box d-flex align-items-center"> 
+                                            <span class="icon-wrap">
+                                                <i class="bi bi-folder-check"></i>
+                                            </span>
+                                            <h6 class="service-text text-muted lh-base">Selection of Technology / Technological process</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-box d-flex align-items-center"> 
+                                            <span class="icon-wrap">
+                                                <i class="bi bi-file-earmark-bar-graph"></i>
+                                            </span>
+                                            <h6 class="service-text text-muted lh-base">Requisition to quote / Invitation to tender of ASU Packages</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-box d-flex align-items-center"> 
+                                            <span class="icon-wrap">
+                                                <i class="bi bi-calculator"></i>
+                                            </span>
+                                            <h5 class="service-text text-muted lh-base">Technical audit / evaluation of Air separation units</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-box d-flex align-items-center"> 
+                                            <span class="icon-wrap">
+                                                <i class="bi bi-building-gear"></i>
+                                            </span>
+                                            <h5 class="service-text text-muted lh-base">Trouble shooting and operational studies of Air separation units</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-box d-flex align-items-center"> 
+                                            <span class="icon-wrap">
+                                                <i class="bi bi-mortarboard"></i>
+                                            </span>
+                                            <h5 class="service-text text-muted lh-base">Training in technology and operations of ASU plants.</h5>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -367,11 +424,42 @@ Pro-active attitude, Interested in constant learning  with Good Communication Sk
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                            </div>
-                        </div>
+                        </div> -->
+                            <!-- </div>
+                        </div> -->
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="container " id="about">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-12">
+                    <!-- Mashead text and app badges-->
+                        <h2 class="display-6 lh-1 mb-4 text-center">KEY EXPERIENCE and STRENGTHS</h1>
+                        <p class="fw-normal text-muted">
+                            Strong Exposure and working experience in Indian Air Separation industry, for over 36 years. I played a leading role during this tenure with my respective organizations and consequently, contributed immensely to the development of this industry in India. 
+
+<br>In the initial stages of learning  developed programs in Fortran language for Distillation column design and pressure drop calculations for air separation units. This was given a tremendous incites and helped to excel in  process calculations         
+
+<br>Conversant with the various software’s utilized in Chemical and Process design such as  process simulators HYSYS, Aspen, HTRI etc. I used them extensively and did several optimization studies thus saved a lot during project execution .
+
+<br><br>A Chemical (Process & Safety) Engineer with more than forty one  years of experience in the field of projects, process and safety engineering. I worked on diverse projects in the chemical industries, petrochemical industries, off-shore units and refineries. Is involved in the conceptualization of the project, client interface for proper communication, generate information for detail design of systems, equipment, piping, layout, instrumentation, electrical, procurement, inspection, etc., interaction with technology suppliers and undertaking the basic engineering , detail Engineering.  I also focused on Process safety aspects of chemical and Hydrocarbon plants.  
+
+<br>I worked in process design in various companies and participated in commissioning, site work and trouble shooting.
+
+
+
+<br>Exposure to International travel and participated in various meetings and internal seminars. Visited Paris, Germany, China, UK, JAPAN, Poland ,US , UAE etc on business travel.  Participated in process and environmental safety seminars.
+
+
+<br>Strong fundamentals in Chemical Engineering with extensive industry experience in varied roles. Good Engineering skills in fluid mechanics, process control, process design, Heat & mass transfer. 
+
+<br>I am a successful team member , team leader, listener, problem solver and mentor. 
+Pro-active attitude, Interested in constant learning  with Good Communication Skills.
+
+                        </p>
+                </div>
+                
             </div>
         </section>
         <section class="container-fluid bg-light pb-5" id="contact">
